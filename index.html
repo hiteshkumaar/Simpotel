@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <nav class="desktop-nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Order</a>
+                <a href="#" class="nav-link">Food</a>
+                <a href="#" class="nav-link">Restaurant</a>
+                <a href="#" class="nav-link">Testimonials</a>
+                <a href="#" class="nav-link">Contact Us</a>
+            </nav>
+            <div class="menu-icon">
+                <img src="menu-bar.png" alt="Menu">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>LOREM IPSUM</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.</p>
+                <button class="btn btn-primary">Click Me</button>
+            </div>
+            <div class="hero-image">
+                <img src="pexels-robin-stickel-70497.jpg" alt="Delicious Burger">
+            </div>
+        </section>
+
+        <!-- Section 2: Gallery Grid -->
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <!-- Column 1 -->
+                <div class="gallery-col col-1">
+                    <img src="pexels-mister-mister-3434523.jpg" alt="Neon Sign" class="gallery-img">
+                    <img src="pexels-rachel-claire-6752433.jpg" alt="Street View" class="gallery-img">
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="gallery-col col-2">
+                    <img src="pexels-eva-bronzini-6141651.jpg" alt="Food Flatlay" class="gallery-img">
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="gallery-col col-3">
+                    <div class="info-card">
+                        <span class="small-title">LOREM IPSUM</span>
+                        <h2>LOREM IPSUM SET ADEMIR</h2>
+                        <button class="btn btn-transparent">Click <img src="icons8-arrow-30.png" alt="arrow" class="arrow-icon"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const nav = document.querySelector('.desktop-nav');
+
+        menuIcon.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
